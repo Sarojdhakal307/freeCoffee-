@@ -1,0 +1,541 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+background: rgba(188, 188, 188, 0.526);
+}
+nav{
+    background-image: linear-gradient(to right, rgb(225, 104, 104) , rgb(173, 68, 68));
+    /* background-color: rgba(255, 116, 116, 0.33); */
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left:2%;
+    height: 24px;
+}
+.logo{
+    border-radius: 100%;
+    height: 25px;
+    margin: 0px 4px;
+}
+nav span{
+    display: flex;
+    /* word-spacing: 3px; */
+    font-weight: bold;
+
+}
+nav span a{
+    color: rgb(41, 37, 33);
+}
+
+nav span ul{
+    margin: 3px;
+    padding: 2px;
+    border-bottom: 1px;
+    cursor: pointer;
+
+}
+.navLefttext{
+    border: none;
+}
+.navLefttext ul:hover{
+    border-bottom: 1px  solid rgb(220, 149, 149);
+
+}
+.navRighttext {
+    border: none;
+    position: absolute;
+    right: 3%;
+    color: rgb(47, 47, 75);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px;
+
+
+}
+
+.navRighttext a{
+    border-bottom: 1px ;
+    cursor: pointer;
+}
+.navRighttext a:hover{
+    /* border-bottom: 1px solid black; */
+    cursor: pointer;
+    color: rgb(252, 15, 15);
+}
+.navRighttext ul{
+    color: rgb(28, 27, 27);
+    
+}
+.sing_in{
+    background-color: none;
+    border: 1px solid rgba(255, 255, 255, 0.687);
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin: 4px;
+    color: black;
+    background-color: rgba(188, 183, 183, 0.565);
+    padding: 1px 10px;
+}
+.navRighttext button:hover{
+    background-color: rgb(255, 0, 0);
+    
+
+}
+
+.join_now{
+    background-color:   rgb(0, 0, 0) ;
+    color: white;
+    font-weight: 500;
+    border: 1px solid rgb(170, 76, 76);
+    border-radius: 10px;
+    padding: 2px 8px;
+    margin: 4px;
+}
+
+.nav-Border{
+    width: 100%;
+    height: 15px;
+    background-color: rgba(244, 94, 94, 0.553);
+    font-size: 10px;
+    color: rgb(66, 64, 64);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    display: none;
+    
+    
+}
+main{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.106), rgba(295,0,0,1));
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.maincontainer .text1{
+    font-family: Serif;
+    font-weight: 700;
+    color: rgb(64, 35, 84);
+    font-size: 30px
+}
+main img{
+    height: 60vh;
+    min-width: 30%;
+    position: absolute;
+   right: 3px;
+   
+}
+#joinButton{
+    border: 1px solid rgba(199, 0, 0, 0.373);
+    border-radius: 10px;
+    padding: 1px 10px;
+    margin: 3px;
+    
+    font-weight: 500;
+}
+#joinButton:hover{
+    background-color: rgb(162, 45, 45);
+    color: white;
+}
+/* for neck  */
+
+.neck {
+    height:70vh;
+    background-color: rgba(255, 255, 255, 0.413);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(29, 43, 94);
+    margin: 20px;
+    margin-bottom: 10px;
+}
+.options pt{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 480;
+    word-spacing: 4px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+
+}
+.optionContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+    max-width: 140vh;
+    height: 40vh;
+    margin-top: 20px;
+}
+/* option 1 */
+.optionContainer .option1{
+    border: 2px solid rgba(160, 198, 159, 0.332);
+    margin: 2px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+
+}
+.optionContainer .option1:hover{
+    border: 2px solid rgba(0, 0, 0, 0.332);
+    background: rgb(146, 145, 145);
+}
+.option1 div{
+    border: 1px solid lightgreen;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option1 a{
+    font-weight: 500;
+}
+.option1 p{
+    font-size: 13px;
+}
+/* option2 */
+.optionContainer .option2{
+    border: 2px solid rgba(160, 198, 159, 0.283);
+    margin: 2px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+
+}
+.optionContainer .option2:hover{
+    border: 2px solid rgba(0, 0, 0, 0.332);
+    background: rgb(146, 145, 145);
+}
+.option2 div{
+    border: 1px solid rgb(144, 238, 144);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option2 a{
+    font-weight: 500;
+}
+.option2 p{
+    font-size: 13px;
+}
+/* option3 */
+.optionContainer .option3{
+    border: 2px solid rgba(160, 198, 159, 0.318);
+    margin: 2px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+
+}
+.optionContainer .option3:hover{
+    border: 2px solid rgba(0, 0, 0, 0.332);
+    background: rgb(146, 145, 145);
+}
+.option3 div{
+    border: 1px solid lightgreen;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option3 a{
+    font-weight: 500;
+}
+.option3 p{
+    font-size: 13px;
+}
+
+/* chest part */
+
+.chest{
+    background-color: rgba(188, 234, 244, 0.285);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top:50px ;
+    flex-direction: column;
+    height: 50vh;
+}
+.chestinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+.chest h2{
+    font-weight: 500;
+    font-size: 30px;
+    
+}
+.chest .rateBar{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+
+}
+.chest .rateBar ul{
+    margin: 19px;
+}
+.chest .rateBar ul:hover{
+        border-bottom: 2px solid blue;
+        margin:18px
+}
+.chest .request{
+    background-color: rgba(188, 234, 244, 0.819);  
+    height: 30vh; 
+    width: 98%;
+    /* max-width: 100vh; */
+    z-index: 2;
+    background-image: url(/pic/networking.jpg);
+    background-repeat:no-repeat;
+    /* background-a; */
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    
+    padding: 10px;
+}
+
+.request h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    
+    
+}.request p{
+    color: rgb(254, 254, 254);
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.request img{
+    height: 40vh;
+    width: 20vh;
+}
+
+/* Endless Extras */
+
+.endlessExtras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(170, 207, 240, 0.409);
+    height: 70vh;
+
+}
+.endlessExtras h2{
+    font-size: 3rem;
+    font-family:monospace;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.endlessExtras h3{
+    color: #221141;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: inherit;
+}
+.endlessExtras .joining{
+    width: 70vh;
+}
+.endlessOptions{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #66606056;
+    padding: 10px;
+    max-width: 140vh;
+    height: 40vh;
+    margin-top: 20px;
+}
+.endlessExtras .funFree{
+   
+    border: 2px solid rgba(88, 87, 80, 0.332);
+    margin: 2px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.endlessExtras .funFree:hover{
+    background-color: aliceblue;
+    
+}
+.endlessExtras .orderpay{
+   
+    border: 2px solid rgba(88, 87, 80, 0.332);
+    margin: 2px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+.endlessExtras .orderpay:hover{
+    background-color: aliceblue;
+    
+}
+.endlessExtras .getfree{
+   
+    border: 2px solid rgba(88, 87, 80, 0.332);
+    margin: 2px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+.endlessExtras .getfree:hover{
+    background-color: aliceblue;
+    
+}
+.endlessExtras img{
+    height: 55px;
+    border-radius: 50%;
+
+}
+.endlessExtras a {
+    color: rgba(5, 26, 76, 0.461);
+
+}
+.endlessExtras a:hover {
+    text-decoration: underline;
+    color: rgb(117, 79, 195);
+
+}
+/* footer */
+footer{
+    background-image: url(./pic/networking.jpg);
+    background-size: cover;
+    /* background-color: rgba(174, 144, 144, 0.356); */
+    /* display: flex; */
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    /* height: 30vh; */
+}
+.footerRight{
+    display:flex;
+    justify-content: space-evenly;
+}
+.footerRight div{
+    margin: 10px;
+}
+.footerRight div a{
+    font-style: oblique;
+    color: rgba(157, 196, 204, 0.571);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    /* body{
+         background-color: black; 
+    } */
+    /* main container */
+    main{
+        height: 40vh;
+        font-size: 15px;
+    }
+    .maincontainer .text1{
+        font-family: Serif;
+        font-weight: 700;
+        color: rgb(64, 35, 84);
+        font-size: 28px
+    }
+    main img{
+        height: 40vh;
+        width: 30%;
+        position: absolute;
+       right: 3px;
+       
+    }
+ 
+  }
+
+
+
+
+  @media screen and (max-width: 465px) {
+
+    /* main container */
+    main{
+        height: 30vh;
+        font-size: 10px;
+    }
+    .maincontainer .text1{
+        font-family: Serif;
+        font-weight: 700;
+        font-size: 28px
+    }
+    main img{
+        height: 30vh;
+        width: 30%;
+        position: absolute;
+       right: 3px;
+       
+    }
+
+  }
+
+  @media screen and (max-width: 423px) {
+    .endlessOptions{
+       height: 60vh;
+    }
+
+  }
